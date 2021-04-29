@@ -57,6 +57,7 @@ function AdminClimber() {
     findClimber();
   }, []);
 
+  // Find the current league based on today's date
   const getCurrentLeague = () => {
     for(let league of leagues) {
       if(moment().isBetween(league.start, league.end)) {
@@ -68,6 +69,7 @@ function AdminClimber() {
     }
   }; // end getCurrentLeague
 
+  // loop use the climberInfo store to define the climber name, team, and bye week
   const findClimber = () => {
     let teamId = 0;
     let byeWeek = 0;
@@ -88,7 +90,6 @@ function AdminClimber() {
   }; // end findClimber
 
   const findClimberScore = (byeWeek) => {
-
     let score = climberWeekCalc(
         id,
         leagueStart,

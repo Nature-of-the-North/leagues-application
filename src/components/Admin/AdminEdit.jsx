@@ -27,6 +27,7 @@ function AdminEdit() {
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('')
 
+  // Save the edited league info
   function saveResults() {
     dispatch({
       type: 'UPDATE_LEAGUE',
@@ -91,6 +92,8 @@ function AdminEdit() {
         justify="space-around"
         alignItems="center"
       >
+
+        {/* League Name Input */}
         <Grid>
           <p>League Name:</p>
         </Grid>
@@ -113,6 +116,8 @@ function AdminEdit() {
         justify="space-around"
         alignItems="center"
         >
+
+        {/* Start Date Input */}
         <Grid item xs={12}>
           <p>Start date:</p>
         </Grid>
@@ -135,6 +140,8 @@ function AdminEdit() {
         justify="space-around"
         alignItems="center"
         >
+
+          {/* End Date Input */}
           <Grid item={12}>
           <p>End Date: </p>
         </Grid>
@@ -150,6 +157,7 @@ function AdminEdit() {
       </Grid>
       <br></br>
 
+      {/* Save and Delete Buttons */}
       <Grid container direction="row" justify="center" alignItems="center">
         <Grid>
           <Button variant="contained" color="primary" onClick={saveResults}  >

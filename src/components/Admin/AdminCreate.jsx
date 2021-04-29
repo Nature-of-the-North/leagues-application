@@ -48,9 +48,11 @@ function handleSubmit() {
         justify="space-around"
         alignItems="center"
       >
+
         <Grid item xs={6}>
           <h1>Create a League</h1>
         </Grid>
+
       </Grid>
       
       <Grid
@@ -61,7 +63,7 @@ function handleSubmit() {
         justify="space-around"
         alignItems="center"
       >
-          {/* League name textbox */}
+        {/* League name textbox */}
         <Grid item xs={12}>
           <p>League Name:</p>
         </Grid>
@@ -84,6 +86,8 @@ function handleSubmit() {
         justify="space-around"
         alignItems="center"
       >
+
+        {/* Start Date Input */}
         <Grid item xs={12}>
           <p>Start date:</p>
         </Grid>
@@ -105,6 +109,8 @@ function handleSubmit() {
         justify="space-around"
         alignItems="center"
       >
+
+        {/* End Date Input */}
         <Grid item={12}>
           <p>End Date: </p>
         </Grid>
@@ -118,6 +124,8 @@ function handleSubmit() {
         </Grid>
       </Grid>
       <br></br>
+
+      
       <Grid
         container
         item

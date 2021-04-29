@@ -11,7 +11,7 @@ export function climberWeekCalc(climberId, currentLeagueStart, currentLeagueEnd,
   // determine the number of weeks in the league
   let weeks = (to-from)/day/7
 
-  // loop over weeks array to add each end of  week date to allWeeks array
+  // loop over weeks array to add each end of week date to allWeeks array
   for (let i = 0; i < weeks; i++){
     allWeeks.push(new Date(from += week).toLocaleDateString())
   }

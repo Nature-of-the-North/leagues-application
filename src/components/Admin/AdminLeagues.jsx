@@ -31,11 +31,13 @@ function AdminLeagues() {
   const [deleteName, setDeleteName] = useState('');
 
 
+  // Push to the Create League page
   function createNewLeague() {
     history.push(`/admin/leagues/new`);
   }; // end createNewLeague
 
 
+  // Push to the Edit League page
   function handleEdit(leagueId) {
     history.push(`/admin/leagues/edit/${leagueId}`);
   }; // end handleEdit
@@ -49,6 +51,7 @@ function AdminLeagues() {
     handleClose();
   }; // end handleDelete
 
+  // on Delete click, open the delete confirmation pop up
   const handleClickOpen = (leaguesID, leagueName) => {
     console.log('what is the id in handleClickOpen', leaguesID);
     console.log('what is the name in handleClickOpen', leagueName);
@@ -57,6 +60,7 @@ function AdminLeagues() {
     setOpen(true);
   }; // end handleClickOpen
 
+  // close the delete confirmation pop up
   const handleClose = () => {
     setOpen(false);
   }; // end handleClose
